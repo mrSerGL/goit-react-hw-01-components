@@ -2,7 +2,6 @@ import user from '../data/user';
 import Profile from './profile/Profile';
 import Section from './section/Section';
 
-console.log(user);
 
 export const App = () => {
   return (
@@ -17,16 +16,10 @@ export const App = () => {
       }}
     >
       <Section title="User profile">
-        <Profile userInfo={user}/>
+        <Profile user={user}/>
       </Section>
 
-      {/* <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      /> */}
+
 
     </div>
   );
