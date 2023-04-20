@@ -1,6 +1,6 @@
 import user from '../data/user';
 import Profile from './profile/Profile';
-import Section from './section/Section';
+// import Section from './section/Section';
 
 export const App = () => {
   return (
