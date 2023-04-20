@@ -1,14 +1,23 @@
 import user from '../data/user';
+import stats from '../data/data'
+
+import Section from './section/Section';
 import Profile from './profile/Profile';
-// import Section from './section/Section';
+import Statistics from './statistics/Statistics';
+
+import './App'
+
 
 export const App = () => {
   return (
-    <div>
-      {/* <Section title="User profile">
+    <div className='container'>
+      <Section title="User profile">
         <Profile user={user} />
-      </Section> */}
-      <Profile user={user} />
+      </Section>
+
+      <Statistics title="Upload stats" stats = {stats}/> 
+
+
     </div>
   );
 };
