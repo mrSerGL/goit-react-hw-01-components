@@ -1,3 +1,9 @@
+import user from '../data/user';
+import Profile from './profile/Profile';
+import Section from './section/Section';
+
+console.log(user);
+
 export const App = () => {
   return (
     <div
@@ -7,10 +13,21 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      React homework template
+      <Section title="User profile">
+        <Profile userInfo={user}/>
+      </Section>
+
+      {/* <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      /> */}
+
     </div>
   );
 };
