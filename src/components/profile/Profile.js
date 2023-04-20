@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import defaultImage from '../../images/default.jpg';
+import './Profile.css'
 
 export default function Profile({ user }) {
-  const { username, tag, location, avatar = defaultImage, stats } = user;
+  const { username, tag, location, avatar = defaultImage } = user;
 
-  console.log(username, tag, location, avatar, stats);
+//   console.log(username, tag, location, avatar, stats);
 
   return (
     <div className="profile">
