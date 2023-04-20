@@ -2,7 +2,6 @@ import user from '../data/user';
 import Profile from './profile/Profile';
 import Section from './section/Section';
 
-
 export const App = () => {
   return (
     <div
@@ -16,11 +15,8 @@ export const App = () => {
       }}
     >
       <Section title="User profile">
-        <Profile user={user}/>
+        <Profile user={user} />
       </Section>
-
-
-
     </div>
   );
 };
