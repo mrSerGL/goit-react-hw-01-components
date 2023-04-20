@@ -16,6 +16,7 @@ export const App = () => {
       </Section>
 
       <Statistics title="Upload stats" stats = {stats}/> 
+      {/* <Statistics stats = {stats}/>  */}
 
 
     </div>
