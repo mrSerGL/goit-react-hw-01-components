@@ -10,7 +10,7 @@ export default function Profile({ user }) {
   return (
     <div className="profile">
       <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
+        <img src={avatar}  width="77px" height="77px"  alt="User avatar" className="avatar" />
         <p className="name">{username}</p>
         <p className="tag">{tag}</p>
         <p className="location">{location}</p>

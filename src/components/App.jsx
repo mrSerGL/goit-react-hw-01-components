@@ -9,7 +9,7 @@ import Statistics from './statistics/Statistics';
 import FriendList from './friendlist/FriendList';
 import TransactionHistory from './transactions/TransactionHistory';
 
-import './App';
+import './App.css';
 
 export const App = () => {
   return (
