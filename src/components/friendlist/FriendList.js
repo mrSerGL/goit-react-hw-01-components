@@ -1,13 +1,30 @@
 import PropTypes from 'prop-types';
-import './FriendList';
+import './FriendList.css';
+
+// ===== styles ======
+
+const isOnlineStl = {
+  'background': 'green',
+};
+const isOfflineStl = 'yellow';
+
+// ===== func =====
 
 export default function FriendList({friends}) {
-    console.log(friends);
+
+
+
   return (
     <ul className="friend-list">
       {friends.map(friend => (
         <li className="item" key={friend.id}>
-          <span className="status">{friend.isOnline}</span>
+
+          {friend.isOnline ?
+          <span className="status" style={isOnlineStl}>{friend.isOnline}</span> :
+          <span className="status" style={{background: isOfflineStl }}>{friend.isOnline}</span>
+          }
+  
+          {/* <span className="status" style={stl}>{friend.isOnline}</span> */}
           <img className="avatar" src={friend.avatar} alt="User avatar" width="48" />
           <p className="name">{friend.name}</p>
         </li>
@@ -21,7 +38,7 @@ FriendList.propTypes = {
       PropTypes.shape({
         id: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
-        isOnline: PropTypes.string.isRequired,
+        // isOnline: PropTypes.string.isRequired,
       })
     ),
   };
