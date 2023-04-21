@@ -4,7 +4,6 @@ import './Statistics';
 export default function Statistics({ stats, title }) {
   return (
     <section className="statistics section">
-      
       {title && <h2 className="title">Upload stats</h2>}
 
       <ul className="stat-list">
@@ -15,7 +14,6 @@ export default function Statistics({ stats, title }) {
           </li>
         ))}
       </ul>
-
     </section>
   );
 }
