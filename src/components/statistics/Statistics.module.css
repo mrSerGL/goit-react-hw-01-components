@@ -1,0 +1,29 @@
+.statistics {
+  background-color: rgb(255, 255, 255);
+}
+
+.title {
+  display: block;
+  width: 100%;
+  padding: 16px 0px;
+
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: grey;
+}
+
+.statList {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 5);
+  padding: 4px 0px;
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #000;
+}

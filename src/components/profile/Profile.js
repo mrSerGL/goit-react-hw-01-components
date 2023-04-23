@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultImage from '../../images/default.jpg';
-import './Profile.css'
+import css from './Profile.module.css'
 
 export default function Profile({ user }) {
   const { username, tag, location, avatar = defaultImage } = user;
@@ -8,26 +8,26 @@ export default function Profile({ user }) {
 //   console.log(username, tag, location, avatar, stats);
 
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar}  width="77px" height="77px"  alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
+    <div className={css.profile}>
+      <div className={css.description}>
+        <img src={avatar}  width="96px" height="96px"  alt="User avatar" className={css.avatar} />
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className={css.stats}>
         <li>
-          <span className="label">Followers: </span>
-          <span className="quantity">{user.stats.followers}</span>
+          <span className={css.label}>Followers </span>
+          <span className={css.quantity}>{user.stats.followers}</span>
         </li>
         <li>
-          <span className="label">Views: </span>
-          <span className="quantity">{user.stats.views}</span>
+          <span className={css.label}>Views </span>
+          <span className={css.quantity}>{user.stats.views}</span>
         </li>
         <li>
-          <span className="label">Likes: </span>
-          <span className="quantity">{user.stats.likes}</span>
+          <span className={css.label}>Likes </span>
+          <span className={css.quantity}>{user.stats.likes}</span>
         </li>
       </ul>
     </div>
