@@ -33,8 +33,12 @@ export const App = () => {
       <div className={css.section}>
       <FriendList friends={friends} />
       </div>
-      
+
+
+      <div className={css.section}>
       <TransactionHistory transactions={transactions} />
+      </div>
+
     </div>
   );
 };
