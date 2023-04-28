@@ -9,6 +9,7 @@ import Statistics from './statistics/Statistics';
 import FriendList from './friendlist/FriendList';
 import TransactionHistory from './transactions/TransactionHistory';
 
+
 import css from './App.module.css';
 
 
